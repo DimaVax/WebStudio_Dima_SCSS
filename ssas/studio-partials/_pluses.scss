@@ -1,0 +1,53 @@
+.pluses-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+    margin-top: 10px;
+}
+
+.pluses-item {
+    width: 270px;
+    font-size: 14px;
+}
+
+.pluses-item::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pluses-item:nth-child(1)::before {
+    background-image: url(../images/pluses-antenna.webp);
+}
+
+.pluses-item:nth-child(2)::before {
+    background-image: url(../images/pluses-clock.webp);
+}
+
+.pluses-item:nth-child(3)::before {
+    background-image: url(../images/pluses-diagram.webp);
+}
+
+.pluses-item:nth-child(4)::before {
+    background-image: url(../images/pluses-astronaut.webp);
+}
+
+.pluses-list {
+    display: flex;
+    gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pluses-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #212121;
+}

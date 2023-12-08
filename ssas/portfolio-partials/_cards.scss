@@ -1,0 +1,76 @@
+.cards-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+    color: black;
+}
+
+.cards-container {
+    padding: 20px 24px 20px 24px;
+}
+
+.cards-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #757575;
+}
+
+.cards {
+    padding-bottom: 94px;
+}
+
+.card {
+    height: 404px;
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-link {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    display: block;
+}
+
+.card:hover,
+.cards-link:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    outline: 0;
+}
+
+.card:hover .cards-overlay,
+.cards-link:focus .cards-overlay {
+    transform: translatey(0%);
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards-overlay {
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 63px 24px;
+    transform: translatey(-100%);
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    line-height: 155.556%;
+}
