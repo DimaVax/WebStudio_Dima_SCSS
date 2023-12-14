@@ -11,7 +11,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: gray;
+    color: $footer-text-color;
     margin-bottom: 9px;
 }
 
@@ -24,7 +24,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196f3;
+    color: $main-blue;
     margin-bottom: 20px;
     display: block;
 }
@@ -38,7 +38,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.footer-container {
+    display: flex;
+    gap: 70px;
+}
 .idk-container {
     padding: 20px 24px 20px 24px;
 }
@@ -46,16 +49,6 @@
 .footer-span {
     color: #fff;
 }
-
-.footer-span {
-    color: #fff;
-}
-
-.footer-container {
-    display: flex;
-    gap: 70px;
-}
-
 .footer-card {
     width: 44px;
     height: 44px;
@@ -90,7 +83,7 @@
 
 .footer-link:hover,
 .footer-link:focus {
-    background-color: #2196f3;
+    background-color: $main-blue;
     outline: 0;
 }
 
@@ -105,7 +98,7 @@
 }
 
 .footer-card:hover .footer-card:focus {
-    background-color: #2196f3;
+    background-color: $main-blue;
 }
 
 .footer-icons {
@@ -133,13 +126,13 @@
 
 .footer-input {
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(33, 150, 243, 0);
+    border: 1px solid $footer-text-color;
+    background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 358px;
     height: 50px;
     padding-left: 16px;
-    color: #ffffff;
+    color: #fff;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +140,7 @@
 
 .footer-input:hover,
 .footer-input:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid $main-blue;
     outline: 0;
 }
 
@@ -155,16 +148,16 @@
 .footer-button:hover {
     outline: 0;
     background-color: #fff;
-    color: #2196f3;
+    color: $main-blue;
 }
 
 .footer-button:focus .form-icon,
 .footer-button:hover .form-icon {
-    fill: #2196f3;
+    fill: $main-blue;
 }
 
 .footer-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
@@ -173,8 +166,7 @@
 
 .footer-button {
     border-radius: 4px;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: $main-blue;
     color: #fff;
     justify-content: center;
     gap: 10px;

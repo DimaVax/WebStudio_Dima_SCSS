@@ -27,7 +27,7 @@
     font-size: 16px;
     line-height: 1.875;
     color: #fff;
-    background-color: #2196f3;
+    background-color: $main-blue;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -46,5 +46,5 @@
 .hero-button:focus {
     outline: 0;
     background-color: #fff;
-    color: #2196f3;
+    color: $main-blue;
 }

@@ -18,7 +18,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196f3;
+    color: $main-blue;
 }
 
 
@@ -26,7 +26,7 @@
 .header-icon1 {
     width: 16px;
     height: 12px;
-    fill: #757575;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -35,7 +35,7 @@
 .header-icon2 {
     width: 10px;
     height: 16px;
-    fill: #757575;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,13 +45,13 @@
 .header-text:hover .header-icon2,
 .header-text:focus .header-icon1,
 .header-text:focus .header-icon2 {
-    fill: #2196f3;
+    fill: $main-blue;
     outline: 0;
 }
 
 .header-text:focus,
 .header-text:hover {
-    color: #2196f3;
+    color: $main-blue;
     outline: 0;
 }
 
@@ -78,7 +78,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    color: $title-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,12 +86,12 @@
 .header-link:hover,
 .header-link:focus,
 .header-studio {
-    color: #2196f3;
+    color: $main-blue;
     outline: 0;
 }
 .header-after {
     position: relative;
-    color: #2196F3;
+    color: $main-blue;
 }
 .header-after::after {
     content: '';
@@ -99,7 +99,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #2196F3;
+    background-color: $main-blue;
     position: absolute;
     left: 0px;
     bottom: -31px;
@@ -111,7 +111,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
+    color: $text-color;
     display: flex;
     gap: 10px;
     align-items: center;

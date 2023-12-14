@@ -25,7 +25,7 @@
 .team-icon {
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
+    fill: $icons-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,7 +39,7 @@
 
 .team-link:hover,
 .team-link:focus {
-    background-color: #2196f3;
+    background-color: $main-blue;
     outline: 0;
 }
 
@@ -53,7 +53,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    color: #212121;
+    color: $title-color;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -87,5 +87,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    color: #757575;
+    color: $text-color;
 }
