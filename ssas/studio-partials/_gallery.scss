@@ -1,4 +1,4 @@
-.galery-text {
+.galery__text {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -18,20 +18,20 @@
     padding-bottom: 94px;
 }
 
-.galery-list {
+.galery__list {
     display: flex;
     gap: 30px;
 }
 
-.galery-title {
+.galery__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    color: $title-color;
+    color: $title__color;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.galery-item {
+.galery__item {
     position: relative;
 }

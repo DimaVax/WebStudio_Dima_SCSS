@@ -9,7 +9,7 @@
     padding-right: auto;
 }
 
-.hero-logo {
+.hero__logo {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -22,12 +22,12 @@
     text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     color: #fff;
-    background-color: $main-blue;
+    background-color: $main__blue;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -42,9 +42,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
     outline: 0;
     background-color: #fff;
-    color: $main-blue;
+    color: $main__blue;
 }

@@ -1,17 +1,17 @@
-.team-icons {
+.team__icons {
     margin-top: 16px;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.team-card {
+.team__card {
     width: 44px;
     height: 44px;
     border-radius: 50%;
 }
 
-.team-link {
+.team__link {
     width: 100%;
     border-radius: 50%;
     height: 100%;
@@ -22,24 +22,24 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon {
+.team__icon {
     width: 20px;
     height: 20px;
-    fill: $icons-color;
+    fill: $icons__color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link:hover .team-icon,
-.team-link:focus .team-icon {
+.team__link:hover .team__icon,
+.team__link:focus .team__icon {
     fill: #fff;
     outline: 0;
 }
 
-.team-link:hover,
-.team-link:focus {
-    background-color: $main-blue;
+.team__link:hover,
+.team__link:focus {
+    background-color: $main__blue;
     outline: 0;
 }
 
@@ -49,21 +49,21 @@
     padding-bottom: 94px;
 }
 
-.team-title {
+.team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    color: $title-color;
+    color: $title__color;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
     display: flex;
     gap: 30px;
 }
 
-.team-item {
+.team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -72,7 +72,7 @@
     background-color: #fff;
 }
 
-.team-2ndtitle {
+.team__2ndtitle {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
@@ -82,10 +82,10 @@
     line-height: 1.19;
 }
 
-.team-text {
+.team__text {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    color: $text-color;
+    color: $text__color;
 }

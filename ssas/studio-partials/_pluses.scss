@@ -1,17 +1,17 @@
-.pluses-text {
+.pluses__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: $text-color;
+    color: $text__color;
     margin-top: 10px;
 }
 
-.pluses-item {
+.pluses__item {
     width: 270px;
     font-size: 14px;
 }
 
-.pluses-item::before {
+.pluses__item::before {
     content: "";
     display: block;
     width: 270px;
@@ -22,32 +22,32 @@
     background-position: center;
 }
 
-.pluses-item:nth-child(1)::before {
+.pluses__item:nth-child(1)::before {
     background-image: url(../images/pluses-antenna.webp);
 }
 
-.pluses-item:nth-child(2)::before {
+.pluses__item:nth-child(2)::before {
     background-image: url(../images/pluses-clock.webp);
 }
 
-.pluses-item:nth-child(3)::before {
+.pluses__item:nth-child(3)::before {
     background-image: url(../images/pluses-diagram.webp);
 }
 
-.pluses-item:nth-child(4)::before {
+.pluses__item:nth-child(4)::before {
     background-image: url(../images/pluses-astronaut.webp);
 }
 
-.pluses-list {
+.pluses__list {
     display: flex;
     gap: 30px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.pluses-title {
+.pluses__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    color: $title-color;
+    color: $title__color;
 }

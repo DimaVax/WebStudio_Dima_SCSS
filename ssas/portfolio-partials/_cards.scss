@@ -1,4 +1,4 @@
-.cards-title {
+.cards__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -6,15 +6,15 @@
     color: black;
 }
 
-.cards-container {
+.cards__container {
     padding: 20px 24px 20px 24px;
 }
 
-.cards-text {
+.cards__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
-    color: #757575;
+    color: $text__color;
 }
 
 .cards {
@@ -28,33 +28,33 @@
     overflow: hidden;
 }
 
-.cards-link {
+.cards__link {
     border: 1px solid #eeeeee;
     width: 100%;
     display: block;
 }
 
 .card:hover,
-.cards-link:focus {
+.cards__link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     outline: 0;
 }
 
-.card:hover .cards-overlay,
-.cards-link:focus .cards-overlay {
+.card:hover .cards__overlay,
+.cards__link:focus .cards__overlay {
     transform: translatey(0%);
 }
 
-.cards-list {
+.cards__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.cards-overlay {
+.cards__overlay {
     height: 294px;
-    background-color: $overlay-background;
+    background-color: $overlay__background;
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text {
+.overlay__text {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
