@@ -1,15 +1,16 @@
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.webp);
-    height: 600px;
-    display: flex;
-    align-items: center;
-    padding-left: auto;
-    padding-right: auto;
-}
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.webp);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
 
-.hero__logo {
+  &__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -20,9 +21,8 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
-
-.hero__button {
+  }
+  &__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -40,11 +40,12 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.hero__button:hover,
-.hero__button:focus {
+  &__button:hover,
+  &__button:focus {
     outline: 0;
     background-color: #fff;
     color: $main__blue;
+  }
 }

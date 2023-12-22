@@ -1,53 +1,54 @@
-.pluses__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $text__color;
-    margin-top: 10px;
-}
-
-.pluses__item {
-    width: 270px;
-    font-size: 14px;
-}
-
-.pluses__item::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.pluses__item:nth-child(1)::before {
-    background-image: url(../images/pluses-antenna.webp);
-}
-
-.pluses__item:nth-child(2)::before {
-    background-image: url(../images/pluses-clock.webp);
-}
-
-.pluses__item:nth-child(3)::before {
-    background-image: url(../images/pluses-diagram.webp);
-}
-
-.pluses__item:nth-child(4)::before {
-    background-image: url(../images/pluses-astronaut.webp);
-}
-
-.pluses__list {
+.pluses {
+  &__list {
     display: flex;
     gap: 30px;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.pluses__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: $title__color;
+    .pluses__item {
+      width: 270px;
+      font-size: 14px;
+
+      .pluses__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $title__color;
+      }
+
+      .pluses__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $text__color;
+        margin-top: 10px;
+      }
+    }
+    .pluses__item::before {
+      content: "";
+      display: block;
+      width: 270px;
+      height: 120px;
+      background-color: #f5f4fa;
+      margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    .pluses__item:nth-child(1)::before {
+      background-image: url(../images/pluses-antenna.webp);
+    }
+
+    .pluses__item:nth-child(2)::before {
+      background-image: url(../images/pluses-clock.webp);
+    }
+
+    .pluses__item:nth-child(3)::before {
+      background-image: url(../images/pluses-diagram.webp);
+    }
+
+    .pluses__item:nth-child(4)::before {
+      background-image: url(../images/pluses-astronaut.webp);
+    }
+  }
 }
