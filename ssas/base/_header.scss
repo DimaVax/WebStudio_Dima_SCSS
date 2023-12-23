@@ -16,7 +16,7 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: $main__blue;
+        color: $main-color;
 
         .logo__span {
           font-weight: 700;
@@ -41,7 +41,7 @@
           width: 100%;
           height: 4px;
           border-radius: 2px;
-          background-color: $main__blue;
+          background-color: $main-color;
           position: absolute;
           left: 0px;
           bottom: -28px;
@@ -52,7 +52,7 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: $title__color;
+            color: $title-color;
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,7 +60,7 @@
           .header__link:hover,
           .header__link:focus,
           .header__current {
-            color: $main__blue;
+            color: $main-color;
             outline: 0;
           }
         }
@@ -76,7 +76,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: $text__color;
+    color: $text-color;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -87,7 +87,7 @@
   .header__icon1 {
     width: 16px;
     height: 12px;
-    fill: $text__color;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,7 @@
   .header__icon2 {
     width: 10px;
     height: 16px;
-    fill: $text__color;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,13 +105,13 @@
   .header__text:hover .header__icon2,
   .header__text:focus .header__icon1,
   .header__text:focus .header__icon2 {
-    fill: $main__blue;
+    fill: $main-color;
     outline: 0;
   }
 
   .header__text:focus,
   .header__text:hover {
-    color: $main__blue;
+    color: $main-color;
     outline: 0;
   }
 }

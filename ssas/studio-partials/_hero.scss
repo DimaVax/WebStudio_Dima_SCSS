@@ -27,7 +27,7 @@
     font-size: 16px;
     line-height: 1.875;
     color: #fff;
-    background-color: $main__blue;
+    background-color: $main-color;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -46,6 +46,6 @@
   &__button:focus {
     outline: 0;
     background-color: #fff;
-    color: $main__blue;
+    color: $main-color;
   }
 }
