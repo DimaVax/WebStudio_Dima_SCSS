@@ -6,52 +6,44 @@
   &__container {
     display: flex;
     gap: 70px;
-
-    .footer__box {
-      .footer__logo {
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: $main-color;
-        margin-bottom: 20px;
-        display: block;
-
-        .footer__span {
-          color: #fff;
-        }
-      }
-      .footer__logo:focus {
-        outline: 0;
-      }
-
-      .footer__list {
-        .footer__item:last-child {
-          margin-bottom: 0;
-        }
-
-        .footer__item {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 1.71;
-          color: $footer-text-color;
-          margin-bottom: 9px;
-
-          .footer__adr {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.71;
-            color: #fff;
-            font-style: normal;
-            margin-bottom: 9px;
-          }
-        }
-      }
-    }
   }
-}
-.footer__content {
-  .footer__suptitle {
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $main-color;
+    margin-bottom: 20px;
+    display: block;
+  }
+  &__span {
+    color: #fff;
+  }
+
+  &__logo:focus {
+    outline: 0;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $footer-text-color;
+    margin-bottom: 9px;
+  }
+  &__adr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #fff;
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+  &__suptitle {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -60,53 +52,109 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-  .footer__icons {
+  &__icons {
     display: flex;
     gap: 10px;
-
-    .footer__card:hover .footer__card:focus {
-      background-color: $main-color;
-    }
-    .footer__card {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background-color: #ffffff1a;
-
-      .footer__link {
-        width: 100%;
-        border-radius: 50%;
-        height: 100%;
-        display: block;
-        padding: 12px;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .footer__icon {
-        width: 20px;
-        height: 20px;
-        fill: #fff;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .footer__link:hover .footer__icon,
-      .footer__link:focus .footer__icon {
-        outline: 0;
-      }
-      .footer__link:hover,
-      .footer__link:focus {
-        background-color: $main-color;
-        outline: 0;
-      }
-    }
   }
-}
+  &__card:hover &__card:focus {
+    background-color: $main-color;
+  }
+  &__card {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+  }
+  &__link {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    display: block;
+    padding: 12px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.footer__form {
-  .footer__label {
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    outline: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $main-color;
+    outline: 0;
+  }
+  &__input {
+    border-radius: 4px;
+    border: 1px solid $footer-text-color;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: #fff;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input::placeholder {
+    color: $footer-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+  }
+  &__input:hover,
+  &__input:focus {
+    border: 1px solid $main-color;
+    outline: 0;
+  }
+  &__button {
+    border-radius: 4px;
+    background-color: $main-color;
+    color: #fff;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:focus,
+  &__button:hover {
+    outline: 0;
+    background-color: #fff;
+    color: $main-color;
+  }
+
+  &__button:focus .form__icon,
+  &__button:hover .form__icon {
+    fill: $main-color;
+  }
+  .form__icon {
+    width: 24px;
+    height: 24px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #fff;
+  }
+  &__label {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -116,71 +164,9 @@
     margin-bottom: 20px;
   }
 
-  .footer__box2 {
+  &__box2 {
     display: flex;
     align-items: center;
     gap: 12px;
-
-    .footer__input {
-      border-radius: 4px;
-      border: 1px solid $footer-text-color;
-      background-color: transparent;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-      width: 358px;
-      height: 50px;
-      padding-left: 16px;
-      color: #fff;
-      transition-property: border;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer__input::placeholder {
-      color: $footer-text-color;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.25;
-      letter-spacing: 0.48px;
-    }
-    .footer__input:hover,
-    .footer__input:focus {
-      border: 1px solid $main-color;
-      outline: 0;
-    }
-    .footer__button {
-      border-radius: 4px;
-      background-color: $main-color;
-      color: #fff;
-      justify-content: center;
-      gap: 10px;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.96px;
-      width: 200px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      transition-property: background-color, color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer__button:focus,
-    .footer__button:hover {
-      outline: 0;
-      background-color: #fff;
-      color: $main-color;
-    }
-
-    .footer__button:focus .form__icon,
-    .footer__button:hover .form__icon {
-      fill: $main-color;
-    }
-    .form__icon {
-      width: 24px;
-      height: 24px;
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      fill: #fff;
-    }
   }
 }
