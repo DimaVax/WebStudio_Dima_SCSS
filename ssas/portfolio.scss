@@ -1,5 +1,7 @@
 @import "./base/reset.scss";
-@import "./base/variables";
+@import "./utilits/variables";
+@import "./utilits/mixins";
+@import "./utilits/placeholders";
 @import "./base/common.scss";
 @import "./base/header";
 @import "./portfolio-partials/buttons";

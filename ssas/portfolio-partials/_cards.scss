@@ -2,70 +2,61 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
+    @extend %gap;
     flex-wrap: wrap;
-    gap: 30px;
   }
   &__item {
-    height: 404px;
+    @include size(auto, 404px );
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
     overflow: hidden;
   }
   &__link {
     border: 1px solid #eeeeee;
-    width: 100%;
+    @include size(100%, 100%);
     display: block;
   }
   &__container {
     padding: 20px 24px 20px 24px;
   }
   &__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include fonts(700, 18px, 2);
     margin-bottom: 4px;
     color: black;
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
+    @include fonts(400, 16px, 1.875);
     color: $text-color;
   }
 
-  &__item:hover,
+  .cards__item:hover,
   &__link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     outline: 0;
   }
 
-  &__item:hover .overlay,
+  .cards__item:hover .overlay,
   &__link:focus .overlay {
     transform: translatey(0%);
   }
 }
 .overlay {
-  height: 294px;
+  @include size(auto, 294px);
   background-color: $overlay-background;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 63px 24px;
-  transform: translatey(-100%);
+  transform: translatey(-101%);
   cursor: pointer;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
 
   &__text {
     color: #fff;
-    font-size: 18px;
-    font-weight: 400;
     letter-spacing: 0.54px;
-    line-height: 155.556%;
+    @include fonts(400, 18px, 155.556%);
   }
 }

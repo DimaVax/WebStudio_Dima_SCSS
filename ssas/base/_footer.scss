@@ -9,9 +9,7 @@
   }
   &__logo {
     font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include fonts(700, 26px, 1.19);
     color: $main-color;
     margin-bottom: 20px;
     display: block;
@@ -29,25 +27,19 @@
   }
 
   &__item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fonts(400, 14px);
     color: $footer-text-color;
     margin-bottom: 9px;
   }
   &__adr {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fonts(400, 14px);
     color: #fff;
     font-style: normal;
     margin-bottom: 9px;
   }
   &__suptitle {
     color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
+    @include fonts(700, 14px, normal);
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -60,28 +52,21 @@
     background-color: $main-color;
   }
   &__card {
-    width: 44px;
-    height: 44px;
+    @include size(44px, 44px);
     border-radius: 50%;
     background-color: #ffffff1a;
   }
   &__link {
-    width: 100%;
+    @include size(100%, 100%);
     border-radius: 50%;
-    height: 100%;
     display: block;
     padding: 12px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background-color);
   }
   &__icon {
-    width: 20px;
-    height: 20px;
+    @include size(20px, 20px);
     fill: #fff;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(fill);
   }
 
   &__link:hover &__icon,
@@ -98,19 +83,14 @@
     border: 1px solid $footer-text-color;
     background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 358px;
-    height: 50px;
+    @include size(358px, 50px);
     padding-left: 16px;
     color: #fff;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border);
   }
   &__input::placeholder {
     color: $footer-text-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
+    @include fonts(400, 16px, 1.25);
     letter-spacing: 0.48px;
   }
   &__input:hover,
@@ -124,16 +104,11 @@
     color: #fff;
     justify-content: center;
     gap: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
+    @include fonts(700, 16px, normal, 00.96px);
+    @include size(200px, 50px);
     display: flex;
     align-items: center;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background-color);
   }
   &__button:focus,
   &__button:hover {
@@ -147,18 +122,14 @@
     fill: $main-color;
   }
   .form__icon {
-    width: 24px;
-    height: 24px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include size(24px, 24px);
+    @include transition(fill);
     fill: #fff;
   }
   &__label {
     color: #fff;
-    font-size: 14px;
-    font-weight: 700;
     letter-spacing: 0.42px;
+    @include fonts(700, 14px, normal, 0.42);
     text-transform: uppercase;
     display: block;
     margin-bottom: 20px;

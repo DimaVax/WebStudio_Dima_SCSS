@@ -1,10 +1,7 @@
 .modal__icon,
 .close__icon {
-  width: 18px;
-  height: 18px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include size();
+  @include transition(fill);
 }
 
 .no-scroll {
@@ -29,8 +26,7 @@
   }
 }
 .modal {
-  width: 528px;
-  height: 581px;
+  @include size(528px, 581px);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   margin-right: auto;
@@ -46,47 +42,34 @@
   &__title {
     color: $title-color;
     text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
+    @include fonts(700, 20px, normal, 0.6px);
     margin-bottom: 12px;
     margin-top: 2px;
-    max-width: 448px;
+    @include size(auto, auto, 448px);
   }
   &__item {
     position: relative;
   }
   &__label {
     color: $text-color;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+    @include fonts(400, 12px, normal, 0.12px);
     display: block;
     position: relative;
     margin-bottom: 10px;
   }
   &__comment {
     margin-bottom: 20px;
-    width: 448px;
-    height: 120px;
+    @include size(448px, 120px);
     padding-left: 16px;
     padding-bottom: 90px;
     padding-top: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border);
   }
   &__comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+    @include fonts(400, 12px, normal, 0.12px);
   }
   &__input:hover,
   &__input:focus,
@@ -96,16 +79,13 @@
     border: 1px solid $main-color;
   }
   &__input {
-    width: 448px;
-    height: 40px;
+    @include size(448px, 40px);
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     position: relative;
     padding-left: 42px;
     margin-top: 4px;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border);
   }
 
   &__icon {
@@ -123,21 +103,14 @@
     background: $main-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #fff;
+    @include fonts(700, 16px, normal, 0.96px);
     text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
-    border: 0;
+    @include size(200px, 50px);
     margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background-color);
   }
   &__button:hover,
   &__button:focus {
@@ -150,8 +123,7 @@
     top: 8px;
     right: 8px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include size(30px, 30px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,8 +142,6 @@
     align-items: center;
     gap: 8px;
     position: relative;
-    display: flex;
-    align-items: center;
   }
   &__checkbox {
     z-index: 2;
@@ -185,8 +155,7 @@
   &__checkbox:checked + .custom {
     background-color: $main-color;
     outline: 0;
-    width: 16px;
-    height: 15px;
+    @include size(16px, 15px);
     border-radius: 2px;
   }
   &__agree {
@@ -205,8 +174,6 @@
 }
 
 .custom {
-  width: 14px;
-  height: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,10 +183,10 @@
   top: 0;
   left: -2px;
   background-color: #fff;
+  @include size(14px, 13px);
 
   &__icon {
-    width: 11px;
-    height: 8px;
+    @include size(11px, 8px);
     fill: #fff;
     opacity: 0;
   }

@@ -1,7 +1,9 @@
-@import "./base/variables";
-@import "./base/reset.scss";
-@import "./base/common.scss";
-@import "./base/header.scss";
+@import "./utilits/variables";
+@import "./utilits/mixins";
+@import "./utilits/placeholders";
+@import "./base/reset";
+@import "./base/common";
+@import "./base/header";
 @import "./studio-partials/hero";
 @import "./studio-partials/pluses";
 @import "./studio-partials/gallery";

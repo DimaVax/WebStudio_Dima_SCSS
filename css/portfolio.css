@@ -29,6 +29,11 @@ button {
   border: 0;
 }
 
+.cards__list {
+  display: flex;
+  gap: 30px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -58,12 +63,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: normal;
   color: #2196f3;
 }
 .header__span {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: normal;
   color: black;
 }
 .header__list {
@@ -91,6 +98,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: normal;
   color: #212121;
   transition-property: color;
   transition-duration: 250ms;
@@ -109,6 +117,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: normal;
   color: #757575;
   display: flex;
   gap: 10px;
@@ -120,6 +129,7 @@ body {
 .contacts__icon1 {
   width: 16px;
   height: 12px;
+  max-width: auto;
   fill: #757575;
   transition-property: fill;
   transition-duration: 250ms;
@@ -128,6 +138,7 @@ body {
 .contacts__icon2 {
   width: 10px;
   height: 16px;
+  max-width: auto;
   fill: #757575;
   transition-property: fill;
   transition-duration: 250ms;
@@ -155,11 +166,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: normal;
   width: 112px;
   height: 38px;
+  max-width: auto;
   border: none;
   border-radius: 4px;
-  transition-property: color, background-color, box-shadow;
+  transition-property: box-shadow background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -174,9 +190,7 @@ body {
   padding-bottom: 94px;
 }
 .cards__list {
-  display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 .cards__item {
   height: 404px;
@@ -187,6 +201,8 @@ body {
 .cards__link {
   border: 1px solid #eeeeee;
   width: 100%;
+  height: 100%;
+  max-width: auto;
   display: block;
 }
 .cards__container {
@@ -196,6 +212,10 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: normal;
   margin-bottom: 4px;
   color: black;
 }
@@ -203,25 +223,32 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: normal;
   color: #757575;
 }
-.cards__item:hover, .cards__link:focus {
+.cards .cards__item:hover, .cards__link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   outline: 0;
 }
-.cards__item:hover .overlay, .cards__link:focus .overlay {
+.cards .cards__item:hover .overlay, .cards__link:focus .overlay {
   transform: translatey(0%);
 }
 
 .overlay {
   height: 294px;
+  width: auto;
+  height: 294px;
+  max-width: auto;
   background-color: rgba(33, 150, 243, 0.8980392157);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 63px 24px;
-  transform: translatey(-100%);
+  transform: translatey(-101%);
   cursor: pointer;
   transition-property: transform;
   transition-duration: 250ms;
@@ -229,10 +256,11 @@ body {
 }
 .overlay__text {
   color: #fff;
-  font-size: 18px;
-  font-weight: 400;
   letter-spacing: 0.54px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 155.556%;
+  letter-spacing: normal;
 }
 
 .footer {
@@ -249,6 +277,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: normal;
   color: #2196f3;
   margin-bottom: 20px;
   display: block;
@@ -266,6 +295,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: normal;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
@@ -273,6 +303,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: normal;
   color: #fff;
   font-style: normal;
   margin-bottom: 9px;
@@ -282,6 +313,10 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -296,13 +331,15 @@ body {
 .footer__card {
   width: 44px;
   height: 44px;
+  max-width: auto;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1019607843);
 }
 .footer__link {
   width: 100%;
-  border-radius: 50%;
   height: 100%;
+  max-width: auto;
+  border-radius: 50%;
   display: block;
   padding: 12px;
   transition-property: background-color;
@@ -312,6 +349,7 @@ body {
 .footer__icon {
   width: 20px;
   height: 20px;
+  max-width: auto;
   fill: #fff;
   transition-property: fill;
   transition-duration: 250ms;
@@ -331,6 +369,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   height: 50px;
+  max-width: auto;
   padding-left: 16px;
   color: #fff;
   transition-property: border;
@@ -339,16 +378,18 @@ body {
 }
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
+  letter-spacing: normal;
   letter-spacing: 0.48px;
 }
 .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
+  letter-spacing: normal;
   letter-spacing: 0.48px;
 }
 .footer__input:hover, .footer__input:focus {
@@ -361,14 +402,16 @@ body {
   color: #fff;
   justify-content: center;
   gap: 10px;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
   letter-spacing: 0.96px;
   width: 200px;
   height: 50px;
+  max-width: auto;
   display: flex;
   align-items: center;
-  transition-property: background-color, color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -383,6 +426,7 @@ body {
 .footer .form__icon {
   width: 24px;
   height: 24px;
+  max-width: auto;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -390,9 +434,11 @@ body {
 }
 .footer__label {
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
   letter-spacing: 0.42px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.42;
   text-transform: uppercase;
   display: block;
   margin-bottom: 20px;
