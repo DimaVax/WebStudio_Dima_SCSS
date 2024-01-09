@@ -13,12 +13,12 @@
   }
   &__logo {
     font-family: "Raleway";
-    @include fonts(700, 26px, 1.19);
+    @include fonts(700, 26px, 1.19, 0.78px);
 
     color: $main-color;
   }
   &__span {
-    @include fonts(700, 26px, 1.19);
+    @include fonts(700, 26px, 1.19, 0.78px);
     color: black;
   }
   &__list {
@@ -33,7 +33,7 @@
   &__after::after {
     content: "";
     display: block;
-    @include size(100%, 4px, );
+    @include size(100%, 4px);
     border-radius: 2px;
     background-color: $main-color;
     position: absolute;
@@ -42,7 +42,7 @@
     transform-origin: (50%, 50%);
   }
   &__link {
-    @include fonts(500, 14px, 1.14);
+    @include fonts(500, 14px, normal);
     color: $title-color;
     @include transition(color);
   }
@@ -52,13 +52,16 @@
     color: $main-color;
     outline: 0;
   }
+  &__button{
+    display: none;
+  }
 }
 .contacts {
   display: flex;
   gap: 50px;
 
   &__text {
-    @include fonts(500, 14px, 1.14);
+    @include fonts(500, 14px, normal);
     color: $text-color;
     display: flex;
     gap: 10px;
@@ -88,5 +91,42 @@
   &__text:hover {
     color: $main-color;
     outline: 0;
+  }
+  &__button{
+    appearance: none;
+    width: 2px;
+  }
+}
+@media screen and (max-width:768px){
+  .header__list{
+    display: none;
+  }
+  .contacts{
+    display: none;
+  }
+  .header__logo{
+    @include fonts(700, 24px, 0.72px);
+  }
+  .header__span{
+    @include fonts(700, 24px, 0.72px);
+  }
+  .header__button{
+    display: block;
+    background-color: #fff;
+  }
+  .header__menu{
+    @include size(40px, 40px);
+  }
+}
+@media screen and ( max-width:1200px) {
+  .header__logo{
+    @include fonts(700, 24px);
+  }
+  .header__span{
+    @include fonts(700, 24px);
+  }
+  .contacts{
+    flex-direction: column;
+    gap: 10px;
   }
 }
