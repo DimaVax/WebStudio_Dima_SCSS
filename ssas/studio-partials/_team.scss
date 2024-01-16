@@ -4,27 +4,40 @@
   padding-bottom: 94px;
 
   &__title {
-    @include fonts(700, 36px, 1.17);
+    @include fonts(700, 28px, 1.17, 0.84px);
     color: $title-color;
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(700, 36px, 1.17, 1.08px);
+    }
   }
   &__list {
     @extend %gap;
+    flex-wrap: wrap;
   }
   &__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    @include size(270px, auto);
+    @include size(450px, auto);
     padding-bottom: 30px;
     background-color: #fff;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @include size(354px, auto);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include size(270px, auto);
+    }
   }
   &__suptitle {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
-    @include fonts(500, 16px, 1.19, 0.03em);
+    @include fonts(500, 16px, 1.17, 0.48px);
   }
 
   &__text {

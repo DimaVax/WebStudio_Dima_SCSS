@@ -5,14 +5,45 @@
 
   &__container {
     display: flex;
-    gap: 70px;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  &__adaptive{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      gap: 165px;
+      flex-direction: row;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      flex-direction: row;
+      text-align: left;
+    }
   }
   &__logo {
     font-family: "Raleway";
-    @include fonts(700, 26px, 1.19);
+    @include fonts(700, 26px, 1.19, 0.78px);
     color: $main-color;
     margin-bottom: 20px;
     display: block;
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(700, 24px, 1.19, 0.72px);
+    }
   }
   &__span {
     color: #fff;
@@ -83,10 +114,18 @@
     border: 1px solid $footer-text-color;
     background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    @include size(358px, 50px);
+    @include size(95vw, 50px);
     padding-left: 16px;
     color: #fff;
     @include transition(border);
+    
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      @include size(450px, 50px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include size(358px, 50px);
+    }
   }
   &__input::placeholder {
     color: $footer-text-color;
@@ -137,7 +176,13 @@
 
   &__box2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 12px;
+    }
   }
 }

@@ -5,15 +5,29 @@
   &__title {
     color: $title-color;
     text-align: center;
-    @include fonts(700, 36px, normal, 1.08px);
-    letter-spacing: 1.08px;
+    @include fonts(700, 28px, normal, 0.84px);
+    margin-bottom: 50px;
+
+    @media screen and (min-width:1200px) {
+      @include fonts(700, 36px, normal, 1.08px);
+    }
   }
 
   &__list {
     @extend %gap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__item {
-    @include size(170px, 92px);
+    @include size(210px, 92px);
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+      @include size(226px, 92px);
+    }
+    @media screen and (min-width:1200px) {
+      @include size(170px, 92px);
+    }
   }
   &__link:hover &__icon,
   &__link:focus &__icon {
@@ -31,9 +45,12 @@
     @include size(100%, 100%);
     display: block;
     border-radius: 4px;
-    border: 1px solid $icons-color;
-    padding: 16px 32px;
+    outline: 1px solid $icons-color;
+    // padding: 16px 32px;
     @include transition(border);
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
   &__icon {
     @include size(106px, 60px);

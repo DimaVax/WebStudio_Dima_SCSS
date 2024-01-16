@@ -3,10 +3,23 @@
     @extend %gap;
     padding-top: 94px;
     padding-bottom: 94px;
+    flex-wrap: wrap;
+    justify-content: center
   }
   &__item {
-    @include size(270px, auto);
+    @include size(100%, auto);
     font-size: 14px;
+    text-align: center;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      @include size(354px, auto);
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include size(270px, auto);
+      text-align: left;
+    }
   }
   &__title {
     @include fonts(700, 14px, 1.14);
@@ -21,7 +34,7 @@
   &__item::before {
     content: "";
     display: block;
-    @include size(270px, 120px);
+    @include size(100%, 120px);
 
     background-color: #f5f4fa;
     margin-bottom: 30px;
