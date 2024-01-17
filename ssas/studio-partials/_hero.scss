@@ -4,33 +4,36 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-bg.webp);
-  @include size(auto, 600px);
-  display: flex;
-  align-items: center;
-  padding-left: auto;
-  padding-right: auto;
+  @include size(auto, auto);
+  padding: 118px 0;
+
+  @media screen and (min-width: 1230px) {
+    padding: 200px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     @include fonts(900, 26px, 161.538%, 1.56);
     color: #fff;
     @include size(auto, auto, 360px);
 
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
-        @include fonts(900, 44px, 1.36, 0.06);
-        @include size(auto, auto, 596px);
+    @media screen and (min-width: 1230px) {
+      @include fonts(900, 44px, 1.36, 0.06);
+      @include size(auto, auto, 596px);
     }
   }
   &__button {
     @include fonts(700, 16px, 1.875);
     color: #fff;
     background-color: $main-color;
-    margin-left: auto;
-    margin-right: auto;
 
     @include size(200px, 50px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -38,7 +41,7 @@
     margin-top: 30px;
     @include transition(background-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1230px) {
       @include size(216px, 50px);
     }
   }

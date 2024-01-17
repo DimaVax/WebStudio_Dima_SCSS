@@ -1,12 +1,21 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1230px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $title-color;
     text-align: center;
     @include fonts(700, 28px, normal, 0.84px);
     margin-bottom: 50px;
+
+    @media screen and (min-width: 1230px) {
+    margin-bottom: 50px;
+  }
 
     @media screen and (min-width:1200px) {
       @include fonts(700, 36px, normal, 1.08px);
@@ -22,7 +31,7 @@
   &__item {
     @include size(210px, 92px);
 
-    @media screen and (min-width:768px) and (max-width:1199px){
+    @media screen and (min-width: 798px) and (max-width: 1229px){
       @include size(226px, 92px);
     }
     @media screen and (min-width:1200px) {

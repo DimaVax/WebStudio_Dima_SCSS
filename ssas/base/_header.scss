@@ -5,7 +5,19 @@
   &__container {
     display: flex;
     align-items: center;
-    @include size(auto, 80px);
+    @include size(450px, 80px);
+
+    @media screen and (min-width: 320px) and (max-width:480px) {
+      @include size(320px, 80px);
+    }
+
+    @media screen and (min-width: 798px) and (max-width:1229px) {
+      @include size(738px, 80px);
+    }
+
+    @media screen and (min-width: 1230px) {
+      @include size(1200px, 80px);
+    }
   }
   &__nav {
     display: flex;
@@ -16,11 +28,11 @@
     @include fonts(700, 24px, 0.72px);
     color: $main-color;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1230px) {
       @include fonts(700, 26px, 1.19, 0.78px);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 798px) and (max-width:1299px) {
       @include fonts(700, 24px);
     }
   }
@@ -28,18 +40,18 @@
     color: black;
     @include fonts(700, 24px, 0.72px);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1230px) {
       @include fonts(700, 26px, 1.19, 0.78px);
     }
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 798px) {
       @include fonts(700, 24px);
     }
   }
   &__list {
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 798px) {
       display: flex;
       margin-left: 93px;
       gap: 50px;
@@ -57,7 +69,7 @@
     background-color: $main-color;
     position: absolute;
     left: 0px;
-    bottom: -28px;
+    bottom: -31px;
     transform-origin: (50%, 50%);
   }
   &__link {
@@ -75,7 +87,7 @@
     background-color: #fff;
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 798px) {
         display: none;
     }
   }
@@ -87,12 +99,12 @@
 .contacts {
   display: none;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1230px){
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
-  @media screen and (min-width: 768px) and (max-width:1199px) {
+  @media screen and (min-width: 798px) and (max-width: 1229px) {
     flex-direction: column;
     gap: 10px;
     display: flex;
