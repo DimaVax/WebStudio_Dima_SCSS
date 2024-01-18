@@ -24,18 +24,20 @@
 
   &__list {
     @extend %gap;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   &__item {
-    @include size(210px, 92px);
+    @include size(auto, 92px);
+    flex-basis: calc((100% - 60px) / 2);
 
     @media screen and (min-width: 798px) and (max-width: 1229px){
       @include size(226px, 92px);
+      flex-basis: calc((100% - 90px) / 3);
     }
-    @media screen and (min-width:1200px) {
-      @include size(170px, 92px);
+    @media screen and (min-width: 1230px) {
+      @include size(auto, 92px);
+      flex-basis: calc((100% - 150px) / 6);
     }
   }
   &__link:hover &__icon,

@@ -4,12 +4,21 @@
   &__list {
     @extend %gap;
     flex-wrap: wrap;
+    justify-content: center
   }
   &__item {
     @include size(auto, 404px );
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 0px) / 1);
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width:798px) and (max-width:1230px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1230px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
   }
   &__link {
     border: 1px solid #eeeeee;
@@ -20,26 +29,29 @@
     padding: 20px 24px 20px 24px;
   }
   &__title {
-    @include fonts(700, 18px, 2);
+    @include fonts(700, 18px, 2, 1.08px);
     margin-bottom: 4px;
     color: black;
   }
 
   &__text {
-    @include fonts(400, 16px, 1.875);
+    @include fonts(400, 16px, 1.875, 0.48px);
     color: $text-color;
   }
 
-  .cards__item:hover,
+  &__item:hover,
   &__link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     outline: 0;
   }
 
-  .cards__item:hover .overlay,
+  &__item:hover .overlay,
   &__link:focus .overlay {
     transform: translatey(0%);
+  }
+  &__image{
+    height: 294px
   }
 }
 .overlay {
@@ -57,6 +69,6 @@
   &__text {
     color: #fff;
     letter-spacing: 0.54px;
-    @include fonts(400, 18px, 155.556%);
+    @include fonts(400, 18px, 155.556%, 0.54px);
   }
 }

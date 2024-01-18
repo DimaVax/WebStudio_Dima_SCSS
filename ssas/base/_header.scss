@@ -5,10 +5,10 @@
   &__container {
     display: flex;
     align-items: center;
-    @include size(450px, 80px);
+    @include size(450px, 60px);
 
     @media screen and (min-width: 320px) and (max-width:480px) {
-      @include size(320px, 80px);
+      @include size(320px, 60px);
     }
 
     @media screen and (min-width: 798px) and (max-width:1229px) {
