@@ -699,7 +699,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .modal {
-    width: 310px;
+    width: 90vw;
     height: 610px;
     max-width: auto;
     padding: 40px 20px 20px;
@@ -752,9 +752,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 450px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .modal__comment {
-    width: 280px;
+    width: 95%;
     height: 120px;
     max-width: auto;
   }
@@ -799,7 +799,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .modal__input {
-    width: 280px;
+    width: 95%;
     height: 40px;
     max-width: auto;
   }
@@ -958,13 +958,13 @@ body {
     gap: 70px;
     flex-direction: row;
     text-align: left;
+    align-items: flex-start;
   }
 }
 .footer__adaptive {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  align-items: center;
   text-align: center;
 }
 @media screen and (min-width: 798px) and (max-width: 1229px) {
@@ -1089,16 +1089,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer__input {
-    width: 290px;
-    height: 50px;
-    max-width: auto;
-  }
-}
 @media screen and (min-width: 798px) and (max-width: 1229px) {
   .footer__input {
-    width: 450px;
+    width: 50vw;
     height: 50px;
     max-width: auto;
   }

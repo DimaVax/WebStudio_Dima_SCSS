@@ -274,9 +274,13 @@ body {
 }
 .buttons__list {
   display: flex;
-  justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 798px) {
+  .buttons__list {
+    justify-content: center;
+  }
 }
 .buttons__button {
   font-weight: 500;
@@ -304,7 +308,6 @@ body {
 }
 .cards__list {
   flex-wrap: wrap;
-  justify-content: center;
 }
 .cards__item {
   width: auto;
@@ -402,13 +405,13 @@ body {
     gap: 70px;
     flex-direction: row;
     text-align: left;
+    align-items: flex-start;
   }
 }
 .footer__adaptive {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  align-items: center;
   text-align: center;
 }
 @media screen and (min-width: 798px) and (max-width: 1229px) {
@@ -533,16 +536,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer__input {
-    width: 290px;
-    height: 50px;
-    max-width: auto;
-  }
-}
 @media screen and (min-width: 798px) and (max-width: 1229px) {
   .footer__input {
-    width: 450px;
+    width: 50vw;
     height: 50px;
     max-width: auto;
   }

@@ -4,7 +4,7 @@
   &__list {
     @extend %gap;
     flex-wrap: wrap;
-    justify-content: center
+    // justify-content: center;
   }
   &__item {
     @include size(auto, 404px );

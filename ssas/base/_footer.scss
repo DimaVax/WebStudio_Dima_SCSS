@@ -14,13 +14,13 @@
       gap: 70px;
       flex-direction: row;
       text-align: left;
+      align-items: flex-start;
     }
   }
   &__adaptive {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    align-items: center;
     text-align: center;
 
     @media screen and (min-width: 798px) and (max-width: 1229px) {
@@ -119,12 +119,12 @@
     color: #fff;
     @include transition(border);
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      @include size(290px, 50px);
-    }
+    // @media screen and (min-width: 320px) and (max-width: 480px) {
+    //   @include size(290px, 50px);
+    // }
 
     @media screen and (min-width: 798px) and (max-width: 1229px) {
-      @include size(450px, 50px);
+      @include size(50vw, 50px);
     }
 
     @media screen and (min-width: 1230px) {
