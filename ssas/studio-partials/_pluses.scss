@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-@media screen and (min-width:1230px) {
+@media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -16,15 +16,18 @@
     @include size(100%, auto);
     font-size: 14px;
     text-align: center;
+    flex-basis: calc((100% - 0px) / 1);
 
-    @media screen and (min-width: 798px) and (max-width: 1229px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       @include size(354px, auto);
       text-align: left;
+      flex-basis: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include size(270px, auto);
       text-align: left;
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
   &__title {

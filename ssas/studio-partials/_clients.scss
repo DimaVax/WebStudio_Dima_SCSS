@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -13,7 +13,7 @@
     @include fonts(700, 28px, normal, 0.84px);
     margin-bottom: 50px;
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 
@@ -31,11 +31,11 @@
     @include size(auto, 92px);
     flex-basis: calc((95vw - 60px) / 2);
 
-    @media screen and (min-width: 798px) and (max-width: 1229px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
       @include size(226px, 92px);
       flex-basis: calc((95vw - 90px) / 3);
     }
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include size(auto, 92px);
       flex-basis: calc((100% - 150px) / 6);
     }

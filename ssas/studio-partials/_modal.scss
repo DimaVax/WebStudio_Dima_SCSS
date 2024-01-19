@@ -44,7 +44,7 @@
     padding: 40px 20px 20px;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     @include size(528px, 581px);
   }
 
@@ -80,7 +80,7 @@
       @include size(95%, 120px);
     }
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include size(448px, 120px);
     }
   }
@@ -108,7 +108,7 @@
       @include size(95%, 40px);
     }
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include size(448px, 40px);
     }
   }
@@ -188,7 +188,7 @@
 
     @include fonts(400, 12px, normal, 0.36px);
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include fonts(400, 14px, normal, 0.42px);
     }
   }
@@ -197,7 +197,7 @@
     @include fonts(400, 12px, normal, 0.36px);
     text-decoration-line: underline;
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       @include fonts(400, 14px, normal, 0.42px);
     }
   }
