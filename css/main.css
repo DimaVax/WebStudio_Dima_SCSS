@@ -601,14 +601,14 @@ body {
   width: auto;
   height: 92px;
   max-width: auto;
-  flex-basis: calc((100% - 60px) / 2);
+  flex-basis: calc((95vw - 60px) / 2);
 }
 @media screen and (min-width: 798px) and (max-width: 1229px) {
   .clients__item {
     width: 226px;
     height: 92px;
     max-width: auto;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((95vw - 90px) / 3);
   }
 }
 @media screen and (min-width: 1230px) {
