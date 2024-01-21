@@ -476,9 +476,9 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    width: 354px;
+    width: auto;
     height: auto;
-    max-width: auto;
+    max-width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -565,7 +565,7 @@ body {
   font-size: 28px;
   line-height: normal;
   letter-spacing: 0.84px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {

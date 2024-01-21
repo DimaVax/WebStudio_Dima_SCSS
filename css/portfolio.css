@@ -291,7 +291,7 @@ body {
 }
 .cards__item {
   width: auto;
-  height: 404px;
+  height: auto;
   max-width: auto;
   flex-basis: calc((100% - 0px) / 1);
   position: relative;
@@ -338,9 +338,6 @@ body {
 }
 .cards__item:hover .overlay, .cards__link:focus .overlay {
   transform: translatey(0%);
-}
-.cards__image {
-  height: 294px;
 }
 
 .overlay {

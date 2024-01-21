@@ -11,7 +11,7 @@
     color: $title-color;
     text-align: center;
     @include fonts(700, 28px, normal, 0.84px);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
