@@ -1216,8 +1216,9 @@ body {
 }
 .menu__link {
   color: #212121;
-  font-size: 40px;
   font-weight: 500;
+  font-size: 40px;
+  line-height: normal;
   letter-spacing: 0.8px;
 }
 .menu__current {
@@ -1225,14 +1226,16 @@ body {
 }
 .menu__number {
   color: #2196f3;
-  font-size: 34px;
   font-weight: 500;
+  font-size: 34px;
+  line-height: normal;
   letter-spacing: 0.68px;
 }
 .menu__mail {
   color: #757575;
-  font-size: 24px;
   font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
   letter-spacing: 0.48px;
 }
 .menu__contact:last-child {
@@ -1248,11 +1251,12 @@ body {
   background-color: rgba(33, 33, 33, 0.2);
   width: 1px;
   height: 22px;
+  max-width: auto;
 }
 .menu__nlink {
   color: #2196f3;
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
   line-height: 122.222%;
   letter-spacing: 0.36px;
 }
