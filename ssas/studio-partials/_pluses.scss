@@ -2,10 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-@media screen and (min-width: 1200px) {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     @extend %gap;
@@ -49,21 +49,126 @@
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px 70px;
   }
 
   &__item:nth-child(1)::before {
-    background-image: url(../images/pluses-antenna.webp);
+    background-image: url(../images/mobile1x/antenna.webp);
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile1x/antenna.webp);
+    }
+
+    @media screen and (min-width:768px){
+      background-image: url(../images/tablet1x/antenna.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet2x/antenna.webp);
+    }
+    }
+    
+    @media screen and (min-width:1200px){
+      background-image: url(../images/dekstop1x/antenna.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/dekstop2x/antenna.webp);
+    }
+    }
   }
 
   &__item:nth-child(2)::before {
-    background-image: url(../images/pluses-clock.webp);
+    background-image: url(../images/mobile1x/clock.webp);
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile1x/clock.webp);
+    }
+
+    @media screen and (min-width:768px){
+      background-image: url(../images/tablet1x/clock.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet2x/clock.webp);
+    }
+    }
+    
+    @media screen and (min-width:1200px){
+      background-image: url(../images/dekstop1x/clock.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/dekstop2x/clock.webp);
+    }
+    }
   }
 
   &__item:nth-child(3)::before {
-    background-image: url(../images/pluses-diagram.webp);
+    background-image: url(../images/mobile1x/diagram.webp);
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile1x/diagram.webp);
+    }
+
+    @media screen and (min-width:768px){
+      background-image: url(../images/tablet1x/diagram.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet2x/diagram.webp);
+    }
+    }
+    
+    @media screen and (min-width:1200px){
+      background-image: url(../images/dekstop1x/diagram.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/dekstop2x/diagram.webp);
+    }
+    }
   }
 
   &__item:nth-child(4)::before {
-    background-image: url(../images/pluses-astronaut.webp);
+    background-image: url(../images/mobile1x/astronaut.webp);
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile1x/astronaut.webp);
+    }
+
+    @media screen and (min-width:768px){
+      background-image: url(../images/tablet1x/astronaut.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet2x/astronaut.webp);
+    }
+    }
+    
+    @media screen and (min-width:1200px){
+      background-image: url(../images/dekstop1x/astronaut.webp);
+
+      @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/dekstop2x/astronaut.webp);
+    }
+    }
   }
 }
